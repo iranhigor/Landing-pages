@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Gratuito: Páginas que Conectam e Convertem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lp-body">
+    <main class="lp-container">
+        <section class="lp-hero">
+            <span class="badge">Guia Prático Gratuito</span>
+            <h1>Transforme visitantes curiosos em clientes fiéis</h1>
+            <p class="subtitle">Sem fórmulas mágicas ou promessas vazias: aprenda a estruturar ofertas honestas, escrever textos que geram conexão e criar páginas rápidas que vendem todos os dias.</p>
+            
+            <ul class="benefits">
+                <li><span class="check-icon">✓</span> Checklist completo antes de colocar sua página no ar</li>
+                <li><span class="check-icon">✓</span> 5 estruturas de títulos testadas na prática</li>
+                <li><span class="check-icon">✓</span> Manual simples para entender métricas sem complicação</li>
+            </ul>
+        </section>
+
+        <section class="lp-form-box">
+            <h2>Para onde enviamos o seu material?</h2>
+            <p class="form-desc">Preencha abaixo e receba o PDF direto na sua caixa de entrada.</p>
+
+            <form id="leadForm" novalidate>
+                <div class="input-group">
+                    <label for="nome">Como podemos te chamar? *</label>
+                    <input type="text" id="nome" placeholder="Ex: Mariana Costa" required>
+                    <small class="error-msg" id="erroNome"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Seu melhor e-mail *</label>
+                    <input type="email" id="email" placeholder="Ex: mariana@exemplo.com.br" required>
+                    <small class="error-msg" id="erroEmail"></small>
+                </div>
+
+                <div class="input-group">
+                    <label for="whatsapp">WhatsApp com DDD *</label>
+                    <input type="tel" id="whatsapp" placeholder="(15) 99999-9999" maxlength="15" required>
+                    <small class="error-msg" id="erroWhats"></small>
+                </div>
+
+                <!-- Campo oculto para guardar de qual anúncio o lead veio -->
+                <input type="hidden" id="origemLead" name="origem">
+
+                <button type="submit" class="btn-submit">Receber meu guia gratuito</button>
+                <p class="privacy-note">Prometemos: zero spam. Seus dados ficam protegidos conosco.</p>
+            </form>
+
+            <!-- Mensagem de Sucesso (Oculta inicialmente) -->
+            <div id="successBox" class="success-box hidden">
+                <div class="success-icon">✉</div>
+                <h3>Tudo certo, <span id="userNameSuccess"></span>!</h3>
+                <p>Acabamos de enviar o guia para o seu e-mail. Dê uma olhada na sua caixa de entrada (ou na aba de promoções).</p>
+                <a href="index.html" class="btn-back">← Voltar para a leitura</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

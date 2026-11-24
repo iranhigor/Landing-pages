@@ -1,0 +1,429 @@
+:root {
+    --bg-paper: #FBF9F5;
+    --surface-white: #FFFFFF;
+    --surface-sand: #F3EFE6;
+    --text-ink: #232220;
+    --text-muted: #66615B;
+    --accent-forest: #1E4637;
+    --accent-forest-hover: #153328;
+    --accent-terracotta: #D96B43;
+    --accent-terracotta-hover: #C25933;
+    --border-soft: #E5DFD5;
+    --error-red: #C83E3B;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-paper);
+    color: var(--text-ink);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+/* ========================
+   ESTILOS DO PORTAL
+   ======================== */
+.portal-header {
+    background: var(--surface-white);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.portal-kicker {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-terracotta);
+    margin-bottom: 0.4rem;
+}
+
+.portal-header h1 {
+    font-size: 2.2rem;
+    color: var(--text-ink);
+    margin-bottom: 0.4rem;
+}
+
+.portal-tagline {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+}
+
+.container {
+    max-width: 760px;
+    margin: 2.5rem auto 4rem;
+    padding: 0 1.25rem;
+}
+
+.post {
+    background: var(--surface-white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 10px 30px rgba(35, 34, 32, 0.04);
+    margin-bottom: 2rem;
+}
+
+.post-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.category-pill {
+    background: var(--surface-sand);
+    color: var(--accent-forest);
+    font-weight: 600;
+    padding: 0.25rem 0.8rem;
+    border-radius: 999px;
+}
+
+.read-time {
+    color: var(--text-muted);
+}
+
+.post h2 {
+    font-size: 1.85rem;
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
+    color: var(--text-ink);
+}
+
+.author-row {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.author-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--accent-forest);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.author-row strong {
+    display: block;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+.author-row span {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.post p {
+    margin-bottom: 1.1rem;
+    font-size: 1.05rem;
+    color: #363431;
+}
+
+.post p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo do Anúncio Humanizado */
+.ad-banner {
+    background: var(--accent-forest);
+    color: #FBF9F5;
+    padding: 2.25rem 2rem;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 14px 30px rgba(30, 70, 55, 0.16);
+}
+
+.ad-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.14);
+    color: #E7EFEA;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 0.9rem;
+}
+
+.ad-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+}
+
+.ad-content p {
+    color: #DCE6E0;
+    max-width: 540px;
+    margin: 0 auto 1.4rem;
+    font-size: 0.98rem;
+}
+
+.btn-ad {
+    display: inline-block;
+    background: var(--accent-terracotta);
+    color: #fff;
+    font-weight: 600;
+    padding: 0.85rem 1.75rem;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-ad:hover {
+    background: var(--accent-terracotta-hover);
+    transform: translateY(-2px);
+}
+
+/* ========================
+   ESTILOS DA LANDING PAGE
+   ======================== */
+.lp-body {
+    background: linear-gradient(160deg, #FBF9F5 0%, #F1ECE1 100%);
+    color: var(--text-ink);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.lp-container {
+    max-width: 1040px;
+    margin: 2.5rem auto;
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background: #E4EDE8;
+    color: var(--accent-forest);
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+}
+
+.lp-hero h1 {
+    font-size: 2.45rem;
+    margin: 1rem 0;
+    line-height: 1.18;
+    color: var(--text-ink);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 1.75rem;
+}
+
+.benefits {
+    list-style: none;
+}
+
+.benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.9rem;
+    font-size: 1rem;
+    color: #363431;
+}
+
+.check-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--accent-forest);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Caixa do Formulário */
+.lp-form-box {
+    background: var(--surface-white);
+    color: var(--text-ink);
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 20px 45px rgba(35, 34, 32, 0.07);
+}
+
+.lp-form-box h2 {
+    margin-bottom: 0.35rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form-desc {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    margin-bottom: 1.6rem;
+}
+
+.input-group {
+    margin-bottom: 1.15rem;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    font-size: 0.88rem;
+    color: #3B3936;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: var(--bg-paper);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 0.98rem;
+    color: var(--text-ink);
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.input-group input:focus {
+    outline: none;
+    background: var(--surface-white);
+    border-color: var(--accent-forest);
+    box-shadow: 0 0 0 3px rgba(30, 70, 55, 0.12);
+}
+
+.error-msg {
+    color: var(--error-red);
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 4px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent-forest);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1.02rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background: var(--accent-forest-hover);
+    transform: translateY(-1px);
+}
+
+.privacy-note {
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.success-box {
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+}
+
+.success-icon {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: #E4EDE8;
+    color: var(--accent-forest);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.success-box h3 {
+    color: var(--accent-forest);
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.success-box p {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--accent-terracotta);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .lp-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .post, .lp-form-box {
+        padding: 1.75rem;
+    }
+
+    .lp-hero h1 {
+        font-size: 2rem;
+    }
+}
